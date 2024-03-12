@@ -44,3 +44,10 @@ Golang DB Transaction
   2.  Consistency: The db state must be valid after the trancation. All constraints must be met.
   3.  Isolation: Concurrent transaction must not affect each other.
   3. Durability: Data written by a successful transaction must be recorded in persistent storage.
+
+  # How To Run SQL TX?
+    BEGIN;                                    BEGIN;
+
+    ...                                       ...
+
+    COMMIT; (If transaction is successful)     ROLLBACK;(iF transaction is unsuccessful)
